@@ -1,0 +1,21 @@
+ 
+<odoo>
+    <record id="view_prayer_dashboard" model="ir.ui.view">
+        <field name="name">hb_prayer.dashboard</field>
+        <field name="model">hb_prayer.tracker</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="name"/>
+                <field name="score"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="o_kanban_record">
+                            <strong t-esc="record.name.value"/>
+                            <div>Score: <span t-esc="record.score.value"/></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>
