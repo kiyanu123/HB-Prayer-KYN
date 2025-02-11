@@ -14,5 +14,5 @@
         'reports/prayer_leaderboard.xml',
     ],
     'installable': True,
-    'application': True,
+    'application': True
 }
